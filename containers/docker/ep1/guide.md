@@ -116,8 +116,10 @@ If we run the image list command we can find it stored in our local docker regis
 ```bash
 docker image ls
 ```
+```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 web_server          1.0                 c7c37e472d31        2 weeks ago         1.22MB
+```
 
 #### Part 4. Launching the container
 Running the container is easy just execute
@@ -131,6 +133,7 @@ Check the status of the container
 ```bash
 docker ps
 ```
-
+```
 CONTAINER ID        IMAGE                                   COMMAND             CREATED             STATUS              PORTS                    NAMES
 71eec442b631        web_server:1.0                          "python app.py"     5 seconds ago       Up 4 seconds        0.0.0.0:5000->5000/tcp   keen_hamilton
+```
