@@ -25,11 +25,14 @@ app = Flask(__name__)
 @app.route("/show_text", methods=["POST", "GET"])
 def show_text():
   """Displays text sent via. POST request..."""
+  
   data = request.get_json()
   return data["text"]
   
 @app.route("/")
 def index():
+  """Index route..."""
+  
   return "Simple web service container"
   
 if __name__ == "__main__":
