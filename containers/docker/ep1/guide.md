@@ -22,7 +22,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/show_text", methods=["POST", "GET"])
+@app.route("/show_text", methods=["POST"])
 def show_text():
   """Displays text sent via. POST request..."""
   
